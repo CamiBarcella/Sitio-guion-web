@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova Academy — Cursos online de programación, inteligencia artificial, diseño, software y hardware.">
+  <title>Nova Academy — Cursos de Tecnología</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%234f46e5'/%3E%3Cpath d='M30 62V38l14 16V38m8 24V38h10a6 6 0 0 1 0 12H52m10 0a6 6 0 0 1 0 12H52' stroke='white' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+        </span>
+        Nova<span class="logo-accent">Academy</span>
+      </a>
+
+      <nav class="nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#cursos" class="nav-link">Cursos</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn cart-btn" id="cartOpenBtn" aria-label="Abrir carrito de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </button>
+        <button class="icon-btn hamburger" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <span class="hero-tag"><span class="pulse-dot"></span>Nueva temporada · 2026</span>
+          <h1>Aprende las habilidades tecnológicas <span class="grad-text">del futuro</span></h1>
+          <p class="hero-sub">Cursos online de programación, inteligencia artificial, diseño, software y hardware. 100% prácticos, con certificado y acceso de por vida.</p>
+          <div class="hero-actions">
+            <a href="#cursos" class="btn btn-primary btn-lg">Explorar cursos</a>
+            <a href="#beneficios" class="btn btn-ghost btn-lg">Cómo funciona</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>+120</strong><span>Cursos</span></div>
+            <div class="stat"><strong>25k+</strong><span>Estudiantes</span></div>
+            <div class="stat"><strong>4.8</strong><span>Valoración media</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="mock-window">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-code">
+              <div class="line c-i w-45"></div>
+              <div class="line c-v w-80"></div>
+              <div class="line w-60"></div>
+              <div class="line c-g w-35"></div>
+              <div class="line w-70"></div>
+              <div class="line c-o w-50"></div>
+              <div class="line c-i w-25"></div>
+              <div class="line w-55"></div>
+            </div>
+          </div>
+          <div class="mock-progress-card">
+            <div class="mpc-head"><span>Python desde Cero</span><strong>68%</strong></div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+          </div>
+          <div class="float-chip fc-1">
+            <span class="chip-icon ci-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            Certificado oficial
+          </div>
+          <div class="float-chip fc-2">
+            <span class="chip-icon ci-indigo"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg></span>
+            4.8 · 25k reseñas
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="cursos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Catálogo</span>
+          <h2>Cursos destacados</h2>
+          <p>Elige tu área favorita y empieza a aprender hoy mismo.</p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="searchInput" placeholder="Buscar cursos..." autocomplete="off">
+          </div>
+          <select id="sortSelect" aria-label="Ordenar cursos">
+            <option value="featured">Destacados</option>
+            <option value="price-asc">Precio: menor a mayor</option>
+            <option value="price-desc">Precio: mayor a menor</option>
+            <option value="rating">Mejor valorados</option>
+            <option value="popular">Más populares</option>
+          </select>
+          <div class="chips" id="chips"></div>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid"></div>
+        <div class="no-results" id="noResults" hidden>
+          <p>No se encontraron cursos</p>
+          <small>Prueba con otro término o categoría.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section section-alt" id="beneficios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Por qué Nova</span>
+          <h2>Aprender nunca fue tan simple</h2>
+          <p>Todo lo que necesitas para pasar de cero a profesional.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-icon b-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+            <h3>Certificados oficiales</h3>
+            <p>Obtén un certificado verificable al completar cada curso y potenciá tu CV.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon b-violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></svg></span>
+            <h3>Acceso de por vida</h3>
+            <p>Paga una sola vez y aprende a tu ritmo, con actualizaciones incluidas.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon b-pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></span>
+            <h3>Mentorías en vivo</h3>
+            <p>Resuelve tus dudas con instructores en sesiones grupales semanales.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon b-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <h3>Proyectos reales</h3>
+            <p>Construye un portafolio con proyectos basados en el mundo laboral.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>¿Listo para empezar?</h2>
+          <p>Únete a más de 25,000 estudiantes que ya están construyendo su futuro en tech.</p>
+          <a href="#cursos" class="btn btn-light btn-lg">Explorar cursos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+          </span>
+          Nova<span class="logo-accent">Academy</span>
+        </a>
+        <p>Formando a la próxima generación de profesionales tecnológicos desde 2020.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.11 8.13L22.75 22h-6.56l-5.14-6.72L5.16 22H1.9l7.6-8.69L1.25 2h6.73l4.64 6.13L18.24 2Zm-1.15 18h1.81L7.03 3.85H5.08L17.1 20Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Cursos</h4>
+        <a href="#cursos">Programación</a>
+        <a href="#cursos">Inteligencia Artificial</a>
+        <a href="#cursos">Diseño</a>
+        <a href="#cursos">Software</a>
+        <a href="#cursos">Hardware</a>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <a href="#">Nosotros</a>
+        <a href="#">Instructores</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Contacto</a>
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Nova Academy. Todos los derechos reservados.</p>
+      <p>Hecho con HTML, CSS y JavaScript</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+    <div class="cart-view" id="cartView">
+      <header class="cart-header">
+        <div>
+          <h2>Tu carrito</h2>
+          <span class="cart-count-label" id="cartCountLabel">0 cursos</span>
+        </div>
+        <button class="icon-btn" id="cartCloseBtn" aria-label="Cerrar carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </header>
+      <div class="cart-body" id="cartItems"></div>
+      <footer class="cart-footer" id="cartFooter">
+        <div class="cart-summary">
+          <div class="summary-row savings-row" id="savingsRow" hidden>
+            <span>Ahorras</span>
+            <span id="savingsAmount">$0.00</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="cartTotal">$0.00</strong>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar compra</button>
+      </footer>
+    </div>
+
+    <div class="success-view" id="successView" hidden>
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h3>¡Compra exitosa!</h3>
+      <p>Tus cursos ya están disponibles. Te enviamos los accesos por correo electrónico.</p>
+      <button class="btn btn-primary btn-block" id="continueBtn">Seguir explorando</button>
+    </div>
+  </aside>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
